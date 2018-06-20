@@ -14,7 +14,7 @@ public class TestPerformance {
   // running time is in the tens of seconds)
   // TODO (optional) refactor to DRY
   // which of the two lists performs better as the size increases?
-  private final int SIZE = 10;
+  private final int SIZE = 100;
 
   // TODO choose this value in such a way that you can observe an actual effect
   // for increasing problem sizes
@@ -48,13 +48,13 @@ public class TestPerformance {
     }
   }
 
-  @Test
-  public void testArrayListAddRemove() {
-    for (int r = 0; r < REPS; r++) {
-      arrayList.add(0, 77);
-      arrayList.remove(0);
-    }
-  }
+//  @Test
+//  public void testArrayListAddRemove() {
+//    for (int r = 0; r < REPS; r++) {
+//      arrayList.add(0, 77);
+//      arrayList.remove(0);
+//    }
+//  }
 
   @Test
   public void testLinkedListAccess() {
@@ -64,11 +64,11 @@ public class TestPerformance {
     }
   }
 
-  @Test
-  public void testArrayListAccess() {
-    long sum = 0;
-    for (int r = 0; r < REPS; r++) {
-      sum += arrayList.get(r % SIZE);
-    }
-  }
+//  @Test
+//  public void testArrayListAccess() {
+//    long sum = 0;
+//    for (int r = 0; r < REPS; r++) {
+//      sum += arrayList.get(r % SIZE);
+//    }
+//  }
 }
